@@ -592,18 +592,18 @@ window.addEventListener("pointercancel", onPointerUp, { passive: false });
 
 
     
-   // function onPointerUpCancel() {
-     // isSelecting = false;
-    //  startCell = null;
-     // tryCommitSelection();
-     // currentPath = [];
-    //}
+    function onPointerUpCancel() {
+      isSelecting = false;
+      startCell = null;
+      tryCommitSelection();
+      currentPath = [];
+    }
 
-    // Event listeners
-   // gridEl.addEventListener("pointerdown", onPointerDown);
-   // gridEl.addEventListener("pointermove", onPointerMove);
-    //window.addEventListener("pointerup", onPointerUpCancel);
-    //window.addEventListener("pointercancel", onPointerUpCancel);
+   Event listeners
+    gridEl.addEventListener("pointerdown", onPointerDown);
+    gridEl.addEventListener("pointermove", onPointerMove);
+    window.addEventListener("pointerup", onPointerUpCancel);
+    window.addEventListener("pointercancel", onPointerUpCancel);
 
     shuffleBtn.addEventListener("click", setupPuzzle);
     playAgainBtn.addEventListener("click", setupPuzzle);
@@ -613,6 +613,7 @@ window.addEventListener("pointercancel", onPointerUp, { passive: false });
   </script>
 </body>
 </html>
+
 
 
 
